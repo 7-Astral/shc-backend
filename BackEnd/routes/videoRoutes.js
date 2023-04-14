@@ -8,7 +8,7 @@ const sgMail = require('@sendgrid/mail')
 
 router.post('/sendMail', asyncHandler(async (req, res) => {
     console.log(req.body)
-    sgMail.setApiKey("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");
+    sgMail.setApiKey("");
     function generateCode(length) {
       var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
       var code = '';
